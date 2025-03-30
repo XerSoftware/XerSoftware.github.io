@@ -1,0 +1,2 @@
+Proyecto de práctica
+Este proyecto será utilizado para realizar prácticas de estructuración semántica de una página web. La página está estructurada con HTML semántico y utiliza etiquetas como <header>, <main>, <section>, etc para organizar el contenido. 
