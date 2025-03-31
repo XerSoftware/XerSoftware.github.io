@@ -8,10 +8,18 @@
 </head>
 <body>
     <header>
+        <img src="https://www.shutterstock.com/image-vector/bazar-vector-logo-600nw-1034922799.jpg" with="100" height="100"
+            alt="Logotipo"/>
         <h1>La Paquetería</h1>
         <h2>Tienda Bazar Online</h2>
     </header>
-    <nav>Este es el nav</nav>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Productos</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
     <main>
         <section>
         <p>
@@ -20,8 +28,32 @@
         </p>
         </section>
 
-        <section>Section 1</section>
-        <section>Section 2</section>
+        <section>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/GxOTCOVD-WQ?si=DsVNIJTl_44myq6v" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </section>
+        <section>Contacto
+            <form action="https://formspree.io/f/xldjwzrl" method="post">
+                <label>Tu Email:
+                    <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                </label>
+                <label>Tu mensaje:</label>
+                    <textarea name="mensaje" row="4" cols="50"></textarea>
+                </label>
+                <label>Estoy interesado en:
+                    <select name="interes">
+                        <option value="vajilla">Vajilla</option>
+                        <option value="velas">Velas</option>
+                        <option value="ceramicas">Cerámicas</option>
+                    </select>  
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>Diseño web creado por Xer <address>xer@digital.com</address></footer>
 </body>
