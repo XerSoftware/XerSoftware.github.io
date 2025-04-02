@@ -1,0 +1,6 @@
+ul.nav-list {
+		list-style: none;
+	}
+ul.nav-list li {
+	text-decoration: none;
+}
