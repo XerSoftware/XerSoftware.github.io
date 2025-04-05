@@ -1,6 +1,42 @@
+body {
+	font-family: 'Karla';
+}
 ul.nav-list {
 		list-style: none;
 	}
 ul.nav-list li {
 	text-decoration: none;
+}
+
+header {
+	background: linear-gradient(to right, #ffffff, #f39762, #f4a153); 
+	background-size: cover; 
+	
+}
+
+footer {
+	gap: 10px;
+	text-align: center;
+	padding: 10px;
+	background-color: #f4a153;
+}
+
+footer i {
+	font-size: 20px;
+	color: white;
+
+}
+
+.social-icons {
+	display: flex;
+	gap: 1rem;
+	margin-top: .5rem;
+	list-style: none;
+	justify-content: center;
+}
+
+.social-icons li {
+	flex: 0 0 auto;
+	display: list-item;
+	
 }
