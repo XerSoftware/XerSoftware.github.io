@@ -2,23 +2,38 @@ body {
 	font-family: 'Karla';
 }
 ul.nav-list {
-		list-style: none;
+		list-style-type: circle; 
 	}
 ul.nav-list li {
 	text-decoration: none;
 }
 
+ul.nav-list li::marker {
+	color: red;
+	font-size: 2em;
+}
+
 header {
 	background: linear-gradient(to right, #ffffff, #f39762, #f4a153); 
-	background-size: cover; 
+	background-size: cover;
+	border: 5px;
+	border-bottom-style: inset;
 	
+}
+
+nav {
+	border: 5px;
+	border-style: double;
+	border-color: red;
 }
 
 footer {
 	gap: 10px;
 	text-align: center;
 	padding: 10px;
-	background-color: #f4a153;
+	background: linear-gradient(to right, #ffffff, #f39762, #f4a153);
+	border: 5px;
+	border-top-style: outset;
 }
 
 footer i {
