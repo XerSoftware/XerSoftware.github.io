@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+	<!-- Mis estilos personalizados -->
+	<link rel="stylesheet" href="./css/styles.css">
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Borel&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sofisticasa</title>
+</head>
+<body>
+<div class="grid-container">
+    <header class="header">
+                    
+        <div class="logotipo">
+            <img src="imagenes/logo_sofisticasa01.png" width="100%" href="./index.html"
+            alt="Logotipo Sofisticasa"/>
+            <!-- <h1 class="minegocio">Sofisticasa</h1>
+            <h2>Tienda Bazar Online</h2> -->
+        </div>
+        <nav class="menu">
+            <ul class="flex-menu">
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+    </header>
+
+    <section class="main">
+        <section id="contacto"><a class="title">Contacto</a>
+            <form action="https://formspree.io/f/xldjwzrl" method="post">
+                <div class="item">
+                <label>Tu Email:</label>
+                    <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                </div>
+                <div class="item">
+                <label>Mensaje:</label>
+                    <textarea name="mensaje" row="4" cols="50"></textarea>
+                </div>
+                <div class="item">
+                <label id="contacto-motivo">Estoy interesado en:</label>
+                    <select name="interes">
+                        <option value="vajilla">Vajilla</option>
+                        <option value="velas">Velas</option>
+                        <option value="ceramicas">Cerámicas</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer class="footer">
+        <a>Copyright Sergio Salcedo</a>
+        <p>Tienda Bazar</p>
+        <ul class="social-icons">
+            <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://x.com"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com"><i  class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
