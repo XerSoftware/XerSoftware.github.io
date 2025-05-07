@@ -60,69 +60,24 @@ body {
 .contenedor_principal {
 	grid-column: 1 / 2;
 	/* width: 1920px; */
-	height: 800px;
+	height: 500px;
 	background-image: url("/imagenes/fondo_main.webp");
 	background-repeat: no-repeat;
 }
-/*
-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background: linear-gradient(to right, #ffffff, #f39762, #f4a153); 
-	background-size: cover;
-	border: 5px;
-	border-bottom-style: inset;
-	
-}
-*/
-
-/* header h1 {
-	flex: 1 1 auto;
-} */
-
-*/
 
 .main{
 	grid-column: 1 / 2;
 	
 }
-
-/* section#intro {
-	flex: 1 1 auto;
-	border: 15px;
-	border-color: red;
-	color: orange;
-} */
-
-/* #video {
-	flex: 1 1 auto;
-	border: 15px;
-	border-color: red;
-} */
-
-section#contacto {
-	display: flex;
-	width: auto;
-	flex-direction: column;
-	padding: 10px;
-	justify-content: start;
-}
-
-section#contacto .item {
-	flex: 1 0 auto;
-	font-weight: bold;
-	padding: 10px;
-}
-
-section#contacto-motivo {
-	flex: 1 1 auto;
-	
+.subtitulo_centrado {
+	text-align: center;
+	font-size:x-large;
 }
 
 .reseñas {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	gap: 100px;
 	padding: 10px;
 }
@@ -131,7 +86,7 @@ section#contacto-motivo {
 	
 	/* border: 1px solid black; */
 	text-align: center;
-	border: 1px solid gray;
+	border: 1px solid rgba(211, 211, 211, 0.384);
 	border-radius: 5px; /* Bordes redondeados */
 	box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.384);
 
@@ -143,34 +98,51 @@ section#contacto-motivo {
 	transform: translateY(-5px);
 }
 
+.fondo_imagen {
+	background-color: #F0F0F0;
+}
 .footer {
-	grid-column: 1 / 2;
+	grid-column: span 1;
+	/* display: flex; */
 	gap: 10px;
 	padding: 10px;
 	/* background: linear-gradient(to bottom, #ffffff, #f39762, #f4a153); */
 	border: 5px;
-	/* border-top-style: outset; */
+	border-top-style: outset;
 }
 
-.footer p{
+.footer #autor{
+	/* display:flexbox; */
+	flex:auto;
+	align-items: center;
 	text-align: center;
 }
 
 .social-icons {
+	flex: auto;
 	display: flex;
-	gap: 4rem;
-	margin-top: .5rem;
+	gap: 3rem;
+	margin-top: 1rem;
 	list-style: none;
 	justify-content: center;
+	padding: 0;
 }
 
 .social-icons li {
-	flex: 0 0 auto;
+	/* flex: 0 0 auto; */
 	display: list-item;
 }
 
 .social-icons i {
 	font-size: 30px;
-	color: rosybrown;
+	color: #BEB09E;
 
 }
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+	.contenedor_principal {
+		background-repeat: no-repeat;
+		background-size: 600px 400px;
+	}
+ }
