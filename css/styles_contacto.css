@@ -33,3 +33,42 @@ section#contacto-motivo {
 	flex: 1 1 auto;
 	
 }
+
+.boton {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    /* background-color: blue; */
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+	#contacto {
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        /* width: 90%; */
+    
+    }
+    #contacto form{
+        /* background-color: aquamarine; */
+        width: 100%;
+    }
+
+    #titulo_contacto{
+        display: flex;
+        /* background-color: aqua; */
+        width: 100%;
+    }
+
+    #contacto .item {
+        display: flex;
+        font-weight: bold;
+        padding: 10px;
+        margin: 10px;
+        /* background-color: blue; */
+        width: 90%;
+    }
+}
