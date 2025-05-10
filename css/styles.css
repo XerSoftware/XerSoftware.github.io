@@ -171,7 +171,7 @@ body {
 
 	.subtitulo_centrado {
 		text-align: center;
-		font-size:small;
+		font-size: 1rem;
 	}
 
 	.flex-menu {
@@ -182,5 +182,19 @@ body {
 		/* margin-left: 300px; */
 		/* background-color: aqua; */
 		flex-direction: row;
+	}
+	
+	.centrado {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.reseñas {
+		display: grid;
+		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+		grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+		gap: 100px;
+		padding: 10px;
+		justify-content: center;
 	}
  }
