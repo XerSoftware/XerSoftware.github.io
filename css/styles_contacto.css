@@ -1,44 +1,66 @@
 #contacto {
 	display: flex;
-    /* grid-template-columns: auto 200px auto; */
-	flex-direction: column;
+    /* grid-template-columns: 1fr 800px 1fr; */
+	/* flex-direction: column; */
     padding: 10px;
-	/* justify-content:center; */
-    align-items: center;
+	justify-content:center;
+    /* align-items: center; */
     /* background-color:blue; */
 }
 
-#contacto .item {
-	/* flex: 1 0 auto; */
-    /* display: flex; */
-    /* justify-content:flex-start; */
-    /* align-items: center; */
-	font-weight: bold;
-	padding: 10px;
+form{
     /* background-color: aquamarine; */
-    width: 390px;
+    font-size: 1.3rem;
+    width: 800px;
 }
 
-#contacto form{
+.item {
+	/* display: flex; */
+    /* justify-content:flex-start; */
+    /* align-items: center; */
+    flex-direction: column;
+    font-weight: bold;
+	padding: 10px;
     /* background-color: aquamarine; */
-    width: 500px;
+    /* width: 850px; */
+    /* flex-wrap: nowrap; */
+}
+.item *{
+    font-size: 1.3rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.item label{
+    display: block;
 }
 
 #titulo_contacto{
     display: flex;
+    margin-left: 10px;
     /* background-color: aqua; */
-    width: 500px;
+    /* width: 500px; */
 }
-section#contacto-motivo {
+#contacto-motivo {
 	flex: 1 1 auto;
 	
 }
 
 .boton {
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
     padding: 20px;
+    width: 20%;
     /* background-color: blue; */
+}
+.mas_datos {
+    display: block;
+    /* background-color: bisque; */
+    margin-left: 20px;
+    padding: 0 50px;
+    width: 50vh;
+    text-align: center;
+    border: 1px solid rgba(211, 211, 211, 0.384);
+	border-radius: 5px; /* Bordes redondeados */
 }
 
 /* Estilos para pantallas pequeñas */
@@ -52,18 +74,12 @@ section#contacto-motivo {
         /* width: 90%; */
     
     }
-    #contacto form{
+    form {
         /* background-color: aquamarine; */
         width: 100%;
     }
 
-    #titulo_contacto{
-        display: flex;
-        /* background-color: aqua; */
-        width: 100%;
-    }
-
-    #contacto .item {
+    .item {
         display: flex;
         font-weight: bold;
         padding: 10px;

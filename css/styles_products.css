@@ -5,14 +5,15 @@ body {
 .catalogo {
     display: grid;
     /* background-color: aquamarine; */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 350px));
     gap: 100px;
 	padding: 10px;
+    justify-content: space-between;
 }
 
 .titulo_catalogo {
-    display: inline-flexbox;
-    padding-left: 10px;
+    display: flex;
+    margin-left: 10px;
 }
 .producto {
 	
@@ -23,26 +24,37 @@ body {
 	box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.384);
 
 }
+.fondo_imagen img{
+    width:370px;
+}
+
 .producto p{
 	padding: 10px 20px 10px 20px;
+    height: 50px;
 }
 
 .boton_producto {
     display: flex;
-    align-items:center;
-    justify-content: end;
+    align-items: end;
+    justify-content: center;
     /* background-color: aquamarine; */
     padding: 0px 10px 10px 0px;
 
 }
 
 .boton_producto button {
-    background-color: BEB09E;
+    /* background-color: #BEB09E; */
+    color: #BEB09E;
+    font-size: 1rem;
     border-radius: 5px;
+    border: solid 1px #BEB09E;
     padding: 10px;
-    border-color: #F0F0F0;
+    border-color: #BEB09E;
+    width: 70%;
+    background-color: transparent;
 }
 
-.boton_producto button:hover {
-    transform: translateX(5px);
+.boton_producto :hover {
+    color: white;
+    background-color: #BEB09E;
 }
