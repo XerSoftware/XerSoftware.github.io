@@ -4,17 +4,21 @@ body {
 
 .catalogo {
     display: grid;
+    border: solid gray;
     /* background-color: aquamarine; */
     grid-template-columns: repeat(auto-fit, minmax(370px, 350px));
     gap: 100px;
 	padding: 10px;
     justify-content: space-between;
+    width: 100vi;
 }
 
 .titulo_catalogo {
     display: flex;
     margin-left: 10px;
+    background: linear-gradient(to right, #ffffff, #BEB09E);
 }
+
 .producto {
 	
 	/* border: 1px solid black; */

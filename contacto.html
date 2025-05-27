@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
 	<!-- Mis estilos personalizados -->
-	<!-- Mis estilos personalizados -->
 	<link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/styles_contacto.css">
 	<!-- Google Font -->
@@ -42,11 +41,12 @@
         </section>
         <section id="contacto">
             <form action="https://formspree.io/f/xldjwzrl" method="post">
+                
                 <div class="item">
                     <label>Nombre: </label>
                     <input type="text">
                 </div>
-                <div class="item">
+                <div class="item zona">
                     <label>Zona donde resides: </label>
                     <select name="zona">
                         <option value="">Otra</option>
@@ -55,11 +55,11 @@
                         <option value="zona_norte">Zona Sur Buenos Aires</option>
                     </select>
                 </div>
-                <div class="item">
+                <div class="item email">
                     <label>Tu Email: </label>
-                    <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required="True" placeholder="minombre@dominio.com">
+                    <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required="True" placeholder="maria@gmail.com">
                 </div>
-                <div class="item">
+                <div class="item mensaje">
                 <label>Mensaje: </label>
                     <textarea class="text_area" cols="22" rows="20" name="mensaje"></textarea>
                 </div>
